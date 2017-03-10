@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 @author:     jinzj
-@desc:
+@desc: for
 """
 
 info = 'this var will be printed out...'
