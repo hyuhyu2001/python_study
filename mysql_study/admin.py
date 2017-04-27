@@ -23,3 +23,5 @@ class Admin(object):
         sql = 'select * from admin where name =%s and password=%s'
         params = (username, password,)
         return self.__helper.Get_one(sql, params)  # sql语句传到Get_one，并且把结果返给我，返给我后，再返回给调用方
+
+
