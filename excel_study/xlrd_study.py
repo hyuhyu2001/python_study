@@ -9,7 +9,7 @@ import os,sys
 from datetime import date,datetime
 import xlrd
 
-newpath = os.chdir( r'D:\python_pycharmWorkspace\python36\python_study\excel_study')
+newpath = os.chdir( r'D:\python_pycharmWorkspace\python36\python_study\excel_study') #改变当前目录到指定的目录
 testfile = r"[]V6.2功能拆分 - 细分.xlsx"
 file = os.path.join(os.getcwd(),testfile)
 if not os.path.isfile(file):

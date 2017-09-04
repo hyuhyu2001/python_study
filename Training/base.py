@@ -29,73 +29,73 @@ def number_base():
 
 def string_base():
     '''字符串示例'''
-    # print(dir('str'))
-    # print(help('str'))
-    # print("hello,my name's alex li")
-    # print('Bob said \"I\'m OK\".') #通过转译符实现
-    # print(r'''"To be, or not to be": that is the question.\
-    # Whether it's nobler in the mind to suffer.''')#加前缀r表示自然字符串，不需要转译;跨行用三引号
-    # print(1 + 2 \
-    # + 4 + 5) # '\'表示拆为两行
+    print(dir('str'))
+    print(help('str'))
+    print("hello,my name's alex li")
+    print('Bob said \"I\'m OK\".') #通过转译符实现
+    print(r'''"To be, or not to be": that is the question.\
+    Whether it's nobler in the mind to suffer.''')#加前缀r表示自然字符串，不需要转译;跨行用三引号
+    print(1 + 2 \
+    + 4 + 5) # '\'表示拆为两行
 
-    #print(isinstance('jim', str)) #判断对象的类型
-    # print(operator.lt( '12345'[0: 3], '123bc'[ 0: 3]))
-    #
-    # print("hello,%s,%s enough"%('world' ,'not'))   #字符串是 %s;整数 %d;浮点数%f
-    # print("{who} turned {age} this year".format(age=88,who="she"))
-    # stock = ['paper', "envelopes", "notepads ", "pens"]
-    # print("we have {0[1]} and {0[2]} in stock".format(stock))
-    #
-    # d = 'abcdefghijklmnop'
-    # print(d[1:10:2]) #从1开始，每隔2元素取一次，分别取1 3 5 7 9 结果： bdfhj
-    # print(d[::2]) #从0开始到末尾，分别取0 2 4 6... 结果 acegikmo
-    # print(d[::- 1]) #负数代表从末尾开始取，步长=1，结果为 ponmlkjihgfedcba
-    # print(d[::- 2])#步长=2，结果为pnljhfdb
-    #
-    # enmu = 'fo'
-    # # for i, t in enumerate(enmu):
-    # #     print(i,t)
-    #
-    # print(zip(enmu))
-    # print(type(zip(enmu)))
-    # a = zip(enmu)
-    # for i in a: #需要通过循环打印出来
-    #     print(i)
-    # print(sorted([5, 2, 3, 1, 4], reverse= True)) #reverse= True时倒序排列
-    #
-    # print('*** SPAM * for * everyone!!! ***'.strip('*!' ) )#同时去除首尾包含*和！的字符 结果：SPAM * for * everyone
-    # print(' hello world!'.title())#结果： Hello World!
-    # seq = ['1', '2', '3', '4', '5']
-    # sep = '+'
-    # print('+'.join(seq))  #join函数非常重要，连接字符串，也可以将列表元组等转换为字符串，与之对应的函数是split()
+    print(isinstance('jim', str)) #判断对象的类型
+    print(operator.lt( '12345'[0: 3], '123bc'[ 0: 3]))
+
+    print("hello,%s,%s enough"%('world' ,'not'))   #字符串是 %s;整数 %d;浮点数%f
+    print("{who} turned {age} this year".format(age=88,who="she"))
+    stock = ['paper', "envelopes", "notepads ", "pens"]
+    print("we have {0[1]} and {0[2]} in stock".format(stock))
+
+    d = 'abcdefghijklmnop'
+    print(d[1:10:2]) #从1开始，每隔2元素取一次，分别取1 3 5 7 9 结果： bdfhj
+    print(d[::2]) #从0开始到末尾，分别取0 2 4 6... 结果 acegikmo
+    print(d[::- 1]) #负数代表从末尾开始取，步长=1，结果为 ponmlkjihgfedcba
+    print(d[::- 2])#步长=2，结果为pnljhfdb
+
+    enmu = 'fo'
+    # for i, t in enumerate(enmu):
+    #     print(i,t)
+
+    print(zip(enmu))
+    print(type(zip(enmu)))
+    a = zip(enmu)
+    for i in a: #需要通过循环打印出来
+        print(i)
+    print(sorted([5, 2, 3, 1, 4], reverse= True)) #reverse= True时倒序排列
+
+    print('*** SPAM * for * everyone!!! ***'.strip('*!' ) )#同时去除首尾包含*和！的字符 结果：SPAM * for * everyone
+    print(' hello world!'.title())#结果： Hello World!
+    seq = ['1', '2', '3', '4', '5']
+    sep = '+'
+    print('+'.join(seq))  #join函数非常重要，连接字符串，也可以将列表元组等转换为字符串，与之对应的函数是split()
     sepseq = '1+2+3+4+5'
     print(sepseq.split('+'))
-    # print('''1+2+3
-    # # +4+5'''.splitlines(1)) #splitlines()按照行风格
-    # dd ='$$$ Get rich now!!! $$$'
-    # print(dd.find('$$$',0,50))
-    # print(dd.count('$$$'))
-    # #
-    # u = '中文'  # 指定字符串类型对象u
-    # str = u.encode('gb2312') #以gb2312编码对u进行编码，获得bytes类型对象str
-    # print(str)
-    # u1 = str.decode('gb2312')#以gb2312编码对字符串str进行解码，获得字符串类型对象u1
-    # print(u1)
+    print('''1+2+3
+    # +4+5'''.splitlines(1)) #splitlines()按照行风格
+    dd ='$$$ Get rich now!!! $$$'
+    print(dd.find('$$$',0,50))
+    print(dd.count('$$$'))
+    #
+    u = '中文'  # 指定字符串类型对象u
+    str = u.encode('gb2312') #以gb2312编码对u进行编码，获得bytes类型对象str
+    print(str)
+    u1 = str.decode('gb2312')#以gb2312编码对字符串str进行解码，获得字符串类型对象u1
+    print(u1)
 
 
 def list_base():
     '''列表处理'''
-    # Ed = ["Gumby", 42]  # 直接声明
-    # AD = 'hello', 'world'  # 通过list()创建  list(AD)=['hello', 'world']
-    # AED= [Ed,AD,list(AD),("Smith",50)]
-    # AED[2] = 'upt' #将下标2的元素更新为upt
-    # AED.append('last')
-    # print(AED.count('last'))
-    # AED.extend(['1', '2', '3', '4'])
-    # AED.insert(2, 'ins')
-    # print(AED)
-    # dd = ['1','2','3']
-    # print(sorted(dd,reverse = True))
+    Ed = ["Gumby", 42]  # 直接声明
+    AD = 'hello', 'world'  # 通过list()创建  list(AD)=['hello', 'world']
+    AED= [Ed,AD,list(AD),("Smith",50)]
+    AED[2] = 'upt' #将下标2的元素更新为upt
+    AED.append('last')
+    print(AED.count('last'))
+    AED.extend(['1', '2', '3', '4'])
+    AED.insert(2, 'ins')
+    print(AED)
+    dd = ['1','2','3']
+    print(sorted(dd,reverse = True))
     ee = [('a',1),('b',2)] #    ee = （('a',1),('b',2)）
     for data in ee:
         print('%s,%s'% data)
@@ -110,45 +110,44 @@ def dict_base():
     aa=dict.fromkeys(['a','b','c'],0)
     # print(aa)
     bb= dict(zip([1,2,3], [4,5,6]))
-    # print(bb)
-    # print('name' in name_info)
-    # print(name_info.has_key( 'user'))
-    # print(name_info.keys())
-    # print(name_info.values())
-    # print(name_info.items())
-    # print(name_info[ 'name'])
-    # print(name_info.get( 'name'))
-    # name_info['salary'] = 3000  # 相当于新增
-    # name_info.setdefault('name', 'king')#有值则不更新，无值则更新
-    # name_info.setdefault('sex', '男')
-    # print(name_info)
-    # for i in name_info:
-    #      print(i,name_info[i])
+    print(bb)
+    print('name' in name_info)
+    print(name_info.has_key( 'user'))
+    print(name_info.keys())
+    print(name_info.values())
+    print(name_info.items())
+    print(name_info[ 'name'])
+    print(name_info.get( 'name'))
+    name_info['salary'] = 3000  # 相当于新增
+    name_info.setdefault('name', 'king')#有值则不更新，无值则更新
+    name_info.setdefault('sex', '男')
+    print(name_info)
+    for i in name_info:
+         print(i,name_info[i])
     aa.update(bb)#bb合并到aa，aa有变化，bb没变化
     print(aa)
     print(bb)
-
 
 def file_base():
     '''文件处理'''
 
     f = open('myFile.txt','r+')
-    # f.seek(0,os.SEEK_CUR)
-    # f.write('DASDAD')
-    # f.writelines(['大大\n','发放\n','发发发\n'])
-    # # print(f.tell())
-    # # print(f.tell())
-    # # print(f.readline())
-    # # print(f.read())
-    # # f.flush()
-    #
-    # print(f.mode)
-    # print(f.encoding)
-    # print(f.closed)
-    # print(f.readlines())
-    # f.write('100')
-    # for line in iter(f):
-    #     print(line)
+    f.seek(0,os.SEEK_CUR)
+    f.write('DASDAD')
+    f.writelines(['大大\n','发放\n','发发发\n'])
+    print(f.tell())
+    print(f.tell())
+    print(f.readline())
+    print(f.read())
+    f.flush()
+
+    print(f.mode)
+    print(f.encoding)
+    print(f.closed)
+    print(f.readlines())
+    f.write('100')
+    for line in iter(f):
+        print(line)
     print(os.getcwd())
     file = os.path.join(os.getcwd(),'myFile.txt')
     print(file)
